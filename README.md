@@ -84,9 +84,3 @@ The dataset includes menstrual health records of Nigerian women aged 18-45, cont
 
 ---
 
-## **Conclusion**
-The MySQL queries enable an in-depth analysis of menstrual health data from Nigerian women aged 18-45. The resulting insights support public health research by identifying critical health metrics such as cycle regularity, average durations, and common premenstrual symptoms.
-
----
-
-Let me know if further customization or deeper analysis is needed! 🚀
