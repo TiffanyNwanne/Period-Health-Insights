@@ -1,5 +1,5 @@
 
-# Menstrual Cycle Analysis Using MySQL
+# Period Health Analysis Using MySQL
 
 ## **Objective**
 This project analyzes menstrual cycle data from Nigerian women aged 18-45 using MySQL queries. The goal is to extract key metrics such as:
