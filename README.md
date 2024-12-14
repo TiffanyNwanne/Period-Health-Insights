@@ -79,8 +79,6 @@ The dataset includes menstrual health records of Nigerian women aged 18-45, cont
 ---
 
 ## **Outcome**
-- Queries were developed and compiled into a comprehensive SQL file: `analysis_queries.sql`.  
-- The file was shared with a download link for execution.
+- Queries were compiled into a comprehensive SQL file: `period_health_ analysis_queries.sql`.  
 
----
 
