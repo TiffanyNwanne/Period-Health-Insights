@@ -1,5 +1,5 @@
 
-# Period Health Analysis Using MySQL
+# Period Health Analysis Using SQL
 
 ## **Objective**
 This project analyzes menstrual cycle data from Nigerian women aged 18-45 using MySQL queries. The goal is to extract key metrics such as:
@@ -22,7 +22,15 @@ The dataset includes menstrual health records of Nigerian women aged 18-45, cont
   - Regular: Cycle length between 25 and 35 days  
   - Irregular: Any other value  
 - **Query Logic:**  
-  - Classified cycles based on the above range using a `CASE` statement.  
+  - Classified cycles based on the above range using a `CASE` statement.
+
+SELECT User_ID, 
+       Cycle_Length, 
+       CASE 
+         WHEN Cycle_Length BETWEEN 25 AND 35 THEN 'Regular' 
+         ELSE 'Irregular' 
+       END AS Cycle_Category
+FROM dataset;
 
 ---
 
