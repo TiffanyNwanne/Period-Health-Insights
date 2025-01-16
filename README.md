@@ -33,6 +33,13 @@ SELECT User_ID,
        END AS Cycle_Category
 FROM dataset;
 '''
+```sql
+SELECT Item_Name, COUNT(*) AS Restock_Count
+FROM inventory_data
+WHERE Current_Stock < Min_Required
+GROUP BY Item_Name
+ORDER BY Restock_Count DESC;
+```
 
 ---
 
