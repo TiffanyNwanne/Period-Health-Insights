@@ -25,12 +25,11 @@ The dataset includes menstrual health records of Nigerian women aged 18-45, cont
   - Classified cycles based on the above range using a `CASE` statement.
 
 ''' sql 
-SELECT User_ID, 
-       Cycle_Length, 
-       CASE 
-         WHEN Cycle_Length BETWEEN 25 AND 35 THEN 'Regular' 
-         ELSE 'Irregular' 
-       END AS Cycle_Category
+SELECT User_ID, Cycle_Length,
+  CASE WHEN Cycle_Length BETWEEN 25 AND 35 
+  THEN 'Regular' 
+  ELSE 'Irregular' 
+  END AS Cycle_Category
 FROM dataset;
 '''
 ```sql
