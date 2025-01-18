@@ -30,7 +30,8 @@ SELECT User_ID, Cycle_Length,
   CASE WHEN Cycle_Length BETWEEN 25 AND 35 
   THEN 'Regular' 
   ELSE 'Irregular' 
-  END AS 
+  END AS Cycle_Category
+FROM dataset;
 ```
 
 ---
@@ -41,18 +42,50 @@ SELECT User_ID, Cycle_Length,
 - **Query Logic:**  
   - Grouped users into predefined age brackets using conditional logic in a `CASE` statement.  
 
+```sql
+SELECT User_ID, 
+       Age, 
+       CASE 
+         WHEN Age < 25 THEN '<25' 
+         WHEN Age BETWEEN 25 AND 34 THEN '25-34' 
+         WHEN Age BETWEEN 35 AND 44 THEN '35-44' 
+         ELSE '45+' 
+       END AS Age_Bracket
+FROM dataset;
+```
 ---
 
 ### **3. Identifying the Most Common Premenstrual Symptom**
 - **Query Logic:**  
   - Counted occurrences of each symptom and returned the most frequent one using `ORDER BY` and `LIMIT`.  
 
+```sql
+SELECT Symptoms, 
+       COUNT(*) AS Symptom_Count
+FROM dataset
+GROUP BY Symptoms
+ORDER BY Symptom_Count DESC
+LIMIT 1;
+```
 ---
 
 ### **4. Percentage Distribution of Cycle Categories**
 - **Metric:** Percentage of regular vs. irregular cycles  
 - **Query Logic:**  
   - Calculated percentage distribution using SQL window functions (`COUNT()` and `SUM() OVER ()`).  
+ 
+```sql
+SELECT Cycle_Category, 
+       COUNT(*) * 100.0 / SUM(COUNT(*)) OVER () AS Percentage
+FROM (
+    SELECT CASE 
+             WHEN Cycle_Length BETWEEN 25 AND 35 THEN 'Regular' 
+             ELSE 'Irregular' 
+           END AS Cycle_Category
+    FROM dataset
+) AS Cycles
+GROUP BY Cycle_Category;
+```
 
 ---
 
