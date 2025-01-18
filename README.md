@@ -40,6 +40,8 @@ This data was analyzed using PostGreSQL queries and visualized in Excel
 
 ### 1. Cycle Categorization: Regular vs. Irregular
 
+[![Preview Image](https://github.com/TiffanyNwanne/Period-Health-Insights/blob/main/images/Categorizing%20Cycles%20as%20%E2%80%9CRegular%E2%80%9D%20vs.%20%E2%80%9CIrregular.png))](https://github.com/TiffanyNwanne/Period-Health-Insights/blob/main/images/Categorizing%20Cycles%20as%20%E2%80%9CRegular%E2%80%9D%20vs.%20%E2%80%9CIrregular.png)
+
 **Criteria:**
 
 **Regular:** Cycle length between 25 and 35 days
