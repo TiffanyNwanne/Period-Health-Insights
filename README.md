@@ -47,7 +47,7 @@ This data was analyzed using PostGreSQL queries and visualized in Excel
 **Query Logic:**
 Classified cycles based on the above range using a CASE statement:
 
-''' sql
+```sql
 SELECT User_ID, 
        Cycle_Length, 
        CASE 
@@ -55,7 +55,7 @@ SELECT User_ID,
          ELSE 'Irregular' 
        END AS Cycle_Category
 FROM period_data;
-,,,
+```
 
 **Findings:**
 
@@ -81,6 +81,7 @@ FROM period_data;
 
 - Grouped users into predefined age brackets using conditional logic in a CASE statement:
 
+```sql
 SELECT User_ID, 
        Age, 
        CASE 
@@ -90,6 +91,7 @@ SELECT User_ID,
          ELSE '45+' 
        END AS Age_Bracket
 FROM period_data;
+```
 
 **Results:**
 
@@ -111,12 +113,14 @@ Women aged 36-45 show greater variation in cycle length compared to younger age 
 
 - Counted occurrences of each symptom and returned the most frequent one using ORDER BY and LIMIT:
 
+```sql
 SELECT Symptoms, 
        COUNT(*) AS Symptom_Count
 FROM period_data
 GROUP BY Symptoms
 ORDER BY Symptom_Count DESC
 LIMIT 1;
+```
 
 **Results:**
 
@@ -136,6 +140,7 @@ Bloating is the most commonly reported symptom, followed by mood swings and cram
 
 - Calculated percentage distribution using SQL window functions (COUNT() and SUM() OVER ()):
 
+```sql
 SELECT Cycle_Category, 
        COUNT(*) * 100.0 / SUM(COUNT(*)) OVER () AS Percentage
 FROM (
@@ -146,6 +151,7 @@ FROM (
     FROM period_data
 ) AS Cycles
 GROUP BY Cycle_Category;
+```
 
 **Results:**
 
@@ -172,6 +178,7 @@ GROUP BY Cycle_Category;
 
 Computed averages by grouping records into age brackets:
 
+```sql
 SELECT Age_Bracket, 
        AVG(Period_Duration) AS Avg_Period_Duration, 
        AVG(Cycle_Length) AS Avg_Cycle_Length
@@ -189,6 +196,7 @@ FROM (
     FROM period_data
 ) AS GroupedData
 GROUP BY Age_Bracket;
+```
 
 **Results:**
 
