@@ -75,13 +75,14 @@ FROM period_data;
 
 **Age Brackets:**
 
-<25
 
-25-34
++ <25
 
-35-44
++ 25-34
 
-45+
+- 35-44
+
+* 45+
 
 **Query Logic:**
 
