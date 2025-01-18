@@ -1,5 +1,7 @@
 # Period Health Insights Report
 
+[!Preview Image](https://github.com/TiffanyNwanne/Period-Health-Insights/blob/main/images/Updated%20Period%20Tracking%20Dashboard.png))}(https://github.com/TiffanyNwanne/Period-Health-Insights/blob/main/images/Updated%20Period%20Tracking%20Dashboard.png)
+
 ## Objective
 
 This project analyzes menstrual cycle data from Nigerian women aged 18-45 using PostGreSQL queries to extract key menstrual health metrics. The goal is to identify trends in cycle regularity, period duration, common symptoms, sleep patterns, and mood variations
