@@ -24,20 +24,13 @@ The dataset includes menstrual health records of Nigerian women aged 18-45, cont
 - **Query Logic:**  
   - Classified cycles based on the above range using a `CASE` statement.
 
-''' sql 
+```sql
+SELECT nam
 SELECT User_ID, Cycle_Length,
   CASE WHEN Cycle_Length BETWEEN 25 AND 35 
   THEN 'Regular' 
   ELSE 'Irregular' 
-  END AS Cycle_Category
-FROM dataset;
-'''
-```sql
-SELECT Item_Name, COUNT(*) AS Restock_Count
-FROM inventory_data
-WHERE Current_Stock < Min_Required
-GROUP BY Item_Name
-ORDER BY Restock_Count DESC;
+  END AS 
 ```
 
 ---
