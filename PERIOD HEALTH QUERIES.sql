@@ -2,7 +2,7 @@
 -- 1. Categorizing Cycles as “Regular” vs. “Irregular.”
 SELECT User_ID, 
        Cycle_Length, 
-       CASE 
+       CASE
          WHEN Cycle_Length BETWEEN 25 AND 35 THEN 'Regular' 
          ELSE 'Irregular' 
        END AS Cycle_Category
