@@ -69,6 +69,8 @@ FROM period_data;
 
 ### 2. Age Grouping into Predefined Brackets
 
+[![Preview Image](https://github.com/TiffanyNwanne/Period-Health-Insights/blob/main/images/Grouping%20Ages%20into%20Predefined%20Age%20Brackets.png))](https://github.com/TiffanyNwanne/Period-Health-Insights/blob/main/images/Grouping%20Ages%20into%20Predefined%20Age%20Brackets.png)
+
 **Age Brackets:**
 
 <25
@@ -111,6 +113,8 @@ Women aged 36-45 show greater variation in cycle length compared to younger age 
 
 ### 3. Identifying the Most Common Premenstrual Symptom
 
+[![Preview Image](https://github.com/TiffanyNwanne/Period-Health-Insights/blob/main/images/Grouping%20Ages%20into%20Predefined%20Age%20Brackets.png))](https://github.com/TiffanyNwanne/Period-Health-Insights/blob/main/images/Grouping%20Ages%20into%20Predefined%20Age%20Brackets.png)
+
 **Query Logic:**
 
 - Counted occurrences of each symptom and returned the most frequent one using ORDER BY and LIMIT:
@@ -135,6 +139,8 @@ LIMIT 1;
 Bloating is the most commonly reported symptom, followed by mood swings and cramps.
 
 ### 4. Percentage Distribution of Cycle Categories
+
+[![Preview Image](https://github.com/TiffanyNwanne/Period-Health-Insights/blob/main/images/Calculating%20Percentage%20Distribution%20of%20Regular%20vs.%20Irregular%20Cycles.png))](https://github.com/TiffanyNwanne/Period-Health-Insights/blob/main/images/Calculating%20Percentage%20Distribution%20of%20Regular%20vs.%20Irregular%20Cycles.png)
 
 **Metric:** Percentage of regular vs. irregular cycles
 
@@ -169,6 +175,8 @@ GROUP BY Cycle_Category;
 
 
 ### 5. Averages by Age Group
+
+[![Preview Image](https://github.com/TiffanyNwanne/Period-Health-Insights/blob/main/images/Calculating%20Average%20Period%20Duration%20and%20Cycle%20Length%20by%20Age%20Group.png))](https://github.com/TiffanyNwanne/Period-Health-Insights/blob/main/images/Calculating%20Average%20Period%20Duration%20and%20Cycle%20Length%20by%20Age%20Group.png)
 
 **Metric:**
 
