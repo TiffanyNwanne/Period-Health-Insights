@@ -1,6 +1,6 @@
 # Period Health Insights Report
 
-[!Preview Image](https://github.com/TiffanyNwanne/Period-Health-Insights/blob/main/images/Updated%20Period%20Tracking%20Dashboard.png))}(https://github.com/TiffanyNwanne/Period-Health-Insights/blob/main/images/Updated%20Period%20Tracking%20Dashboard.png)
+[!Preview Image](https://github.com/TiffanyNwanne/Period-Health-Insights/blob/main/images/Updated%20Period%20Tracking%20Dashboard.png))](https://github.com/TiffanyNwanne/Period-Health-Insights/blob/main/images/Updated%20Period%20Tracking%20Dashboard.png)
 
 ## Objective
 
